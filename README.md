@@ -55,7 +55,7 @@ $$
 R_s = \sum_{k=1}^{N_{s,\text{max}}} k A_k.
 $$
 
-We need to compute the law of the random variables (r.v.) $(A_k)_k$. For all $k\in[|1;N_{s,\text{max}}|]$, let $Z_k$ be the part of the cell where the users require $k$ subcarriers. Then by definition $A_k = N_a(Z_k)$. We characterize $Z_k$ :
+We need to compute the law of the random variables (r.v.) ${(A_k)}_k$. For all $k\in[|1;N_{s,\text{max}}|]$, let $Z_k$ be the part of the cell where the users require $k$ subcarriers. Then by definition $A_k = N_a(Z_k)$. We characterize $Z_k$ :
 
 $$
 \begin{aligned}
@@ -68,7 +68,7 @@ x \in Z_k &\iff N(x) = \left\lceil \frac{C}{W\log_2(1+\frac{K}{||x||^\gamma})} \
 \end{aligned}
 $$
 
-Since $N_a$ is a Poisson process with intensity measure $p_\text{active}\lambda dx$ the r.v. $(A_k)_k$ are independent Poisson r.v. with parameters:
+Since $N_a$ is a Poisson process with intensity measure $p_\text{active}\lambda dx$ the r.v. ${(A_k)}_k$ are independent Poisson r.v. with parameters:
 
 $$
 A_k \sim \mathcal{P}(p\lambda \cdot \text{Area}(Z_k)).
