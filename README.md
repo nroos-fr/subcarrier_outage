@@ -36,6 +36,7 @@ where:
 * $\text{SNR}_\text{min}$ is the minimum required signal-to-noise ratio for the communication to happen (no unit).
 
 The maximum number of subcarriers required in the cell is given by:
+
 $$
 N_{s,\text{max}} = \left\lceil \frac{C}{W\log_2(1+\max\left(\text{SNR}_\text{min}, \frac{K}{R^\gamma}\right))} \right\rceil
 $$
@@ -54,7 +55,7 @@ $$
 R_s = \sum_{k=1}^{N_{s,\text{max}}} k A_k.
 $$
 
-We need to compute the law of the random variables (r.v.) $(A_k)_k$. For all $k \in [|1;N_{s,\text{max}}|]$, let $Z_k$ be the part of the cell where the users require $k$ subcarriers. Then by definition $A_k = N_a(Z_k)$. We characterize $Z_k$ : 
+We need to compute the law of the random variables (r.v.) $(A_k)_k$. For all $k\in[|1;N_{s,\text{max}}|]$, let $Z_k$ be the part of the cell where the users require $k$ subcarriers. Then by definition $A_k = N_a(Z_k)$. We characterize $Z_k$ :
 
 $$
 \begin{aligned}
@@ -68,6 +69,7 @@ x \in Z_k &\iff N(x) = \left\lceil \frac{C}{W\log_2(1+\frac{K}{||x||^\gamma})} \
 $$
 
 Since $N_a$ is a Poisson process with intensity measure $p_\text{active}\lambda dx$ the r.v. $(A_k)_k$ are independent Poisson r.v. with parameters:
+
 $$
 A_k \sim \mathcal{P}(p\lambda \cdot \text{Area}(Z_k)).
 $$
