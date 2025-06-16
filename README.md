@@ -72,7 +72,7 @@ $$
 A_k \sim \mathcal{P}(p\lambda \cdot \text{Area}(Z_k)).
 $$
 
-Then the law of $R_s$ is easily computed by convolving the law of the r.v $(kA_k)_{k\in [1;N_{s,\text{max}}]}$. 
+Then the law of $R_s$ is easily computed by convolving the law of the r.v $(kA_k)_{k \in [|1;N_{s,\text{max}}|]}$.
 
 ### Example values of the parameters
 
